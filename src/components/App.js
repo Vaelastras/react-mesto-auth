@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch, } from 'react-router-dom';
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
@@ -13,6 +14,7 @@ import PopupDelete from "./PopupDelete";
 import Login from "./Login";
 import InfoTooltip from "./InfoTooltip";
 import Register from "./Register";
+import ProtectedRoute from "./ProtectedRoute";
 
 function App () {
 
@@ -167,25 +169,24 @@ function App () {
       .catch(err => console.log(err));
   }
 
-
-
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
         <div className="root">
           <Header />
+          <Switch>
+            <Route path='/sign-in' component={Login}/>
+            <Route path='/sign-up' component={Register}/>
+            <ProtectedRoute exact path="/" component={Main}
+                            cards={cards}
+                            onEditAvatar={handleEditAvatarClick}
+                            onEditProfile={handleEditProfileClick}
+                            onAddPlace ={handleAddPlaceClick}
+                            onCardClick={handleCardClick}
+                            onCardLike={handleCardLike}
+                            onCardDelete={handleCardDelete} />
+          </Switch>
 
-          <Register/>
-          <Login/>
-          <Main
-            cards={cards}
-            onEditAvatar={handleEditAvatarClick}
-            onEditProfile={handleEditProfileClick}
-            onAddPlace ={handleAddPlaceClick}
-            onCardClick={handleCardClick}
-            onCardLike={handleCardLike}
-            onCardDelete={handleCardDelete}
-          />
           <Footer />
 
           <EditProfilePopup
