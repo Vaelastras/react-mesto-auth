@@ -1,0 +1,6 @@
+.popup__text {
+	padding-top: 32px;
+	max-width: calc(100% - 72px);
+	margin: 0 auto;
+	text-align: center;
+}

@@ -10,6 +10,9 @@ import AddPlacePopup from "./AddPlacePopup";
 import {api} from '../utils/Api'
 import {CurrentUserContext} from '../context/CurrentUserContext'
 import PopupDelete from "./PopupDelete";
+import Login from "./Login";
+import InfoTooltip from "./InfoTooltip";
+import Register from "./Register";
 
 function App () {
 
@@ -171,6 +174,9 @@ function App () {
       <div className="page">
         <div className="root">
           <Header />
+
+          <Register/>
+          <Login/>
           <Main
             cards={cards}
             onEditAvatar={handleEditAvatarClick}

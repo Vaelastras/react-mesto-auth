@@ -12,7 +12,11 @@
 @import url(__error/_type/popup__error_type_active.css);
 @import url(__submit/_disabled/popup__submit_disabled.css);
 @import url(__input/_type/popup__input_type_error.css);
-
+@import url(./__wrapper/popup__wrapper.css);
+@import url(./__infostatus/popup__infostatus.css);
+@import url(./__text/popup__text.css);
+@import url(./__login-confirm/popup__login-confirm.css);
+@import url(./__link/popup__link.css);
 
 .popup {
   display: flex;
