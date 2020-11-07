@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Register = () => {
   return (
     <form className='login__container'>
@@ -16,4 +17,3 @@ const Register = () => {
 };
 
 export default Register;
-
