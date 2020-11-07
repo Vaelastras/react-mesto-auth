@@ -1,0 +1,22 @@
+.footer__copyrigth {
+  margin-top: 66px;
+  padding-bottom: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #545454;
+
+  /*какой-то глюк с отображением на широкоформатнике -пространство под строкой состояния белое Оо*/
+  margin-bottom: 0px;
+
+
+}
+
+@media (max-width:320px) {
+  .footer__copyrigth {
+    margin: 48px 19px 36px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
