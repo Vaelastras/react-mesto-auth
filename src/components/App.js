@@ -221,7 +221,7 @@ const handleRegisterConfirm = (foo) => {
     }
   }
 
-  useEffect(()=> {
+  useEffect(() => {
     tokenCheck()
   }, [])
 
