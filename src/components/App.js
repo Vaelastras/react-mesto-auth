@@ -174,7 +174,7 @@ const handleRegisterConfirm = (foo) => {
      .then((res) => {
        if (res) {
          handleRegisterConfirm(true)
-         history.push('/sign-in')
+         history.push('./sign-in')
        } else {
          handleRegisterConfirm(false);
        }
@@ -198,7 +198,7 @@ const handleRegisterConfirm = (foo) => {
 
  const onSignOut = () => {
    localStorage.removeItem('jwt');
-   history.push('/login');
+   history.push('./login');
    setEmail('')
    setLoggedIn(false)
  }
@@ -211,12 +211,12 @@ const handleRegisterConfirm = (foo) => {
           if (res) {
             setEmail(res.data.email);
             setLoggedIn(true);
-            history.push('/');
+            history.push('./');
           }
         })
         .catch(err => {
           console.log(err);
-          history.push('/sign-in');
+          history.push('./sign-in');
         });
     }
   }
