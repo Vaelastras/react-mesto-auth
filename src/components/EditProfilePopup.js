@@ -43,7 +43,7 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser, isLoading}) {
       <fieldset className="popup__inputs">
         <input
           onChange={handleNameUpdater}
-          value={name}
+          value={name || ''}
           className="popup__input popup__input_type_name"
           type="text"
           name="name"
@@ -57,7 +57,7 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser, isLoading}) {
         <span className="popup__error" id="name-input-error"/>
         <input
           onChange={handleDescriptionUpdater}
-          value={description}
+          value={description || ''}
           className="popup__input popup__input_type_job"
           type="text"
           name="about"

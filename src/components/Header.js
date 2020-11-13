@@ -2,7 +2,9 @@ import React from "react";
 import Applogo from "../images/logo.svg";
 import { Link, Route } from "react-router-dom";
 
-function Header() {
+function Header({ onSignOut, email }) {
+
+
   return (
     <header className="header">
       <img className="header__logo" src={Applogo} alt="Логотип проекта 'Mesto'" />
@@ -14,6 +16,13 @@ function Header() {
 
         <Route exact path="/sign-in">
           <Link className="header__link" to="/sign-up">Регистрация</Link>
+        </Route>
+
+        <Route exact path="/">
+          <div className="header__info">
+            <p className="header__email">{email}</p>
+            <button className="header__button" onClick={ onSignOut } type="button">Выйти</button>
+          </div>
         </Route>
 
 
