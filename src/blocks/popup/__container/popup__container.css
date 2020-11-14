@@ -2,14 +2,13 @@
   position: relative;
   margin: 0 auto;
   align-self: center;
-  width: 100%;
   max-width: 430px;
   background-color: #fff;
   border-radius: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 910px) {
   .popup__container {
-    max-width: 300px;
+    width: calc(100% - 40px);
   }
 }
