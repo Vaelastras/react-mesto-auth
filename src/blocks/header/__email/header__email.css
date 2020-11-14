@@ -1,7 +1,7 @@
 .header__email {
-	max-width: 200px;
+	max-width: 140px;
 	height: 22px;
-	margin: 0px;
+	margin: 0;
 	padding-right: 24px;
 	font-size: 18px;
 	font-weight: 500;
@@ -12,12 +12,16 @@
 	text-overflow: ellipsis
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 320px) {
 	.header__email {
-		display: none;
+		max-width: none;
+		padding-right: 0;
+		padding-top: 40px;
 		font-size: 18px;
 		line-height: 22px;
-		margin-left: auto;
-		margin-right: auto;
+		text-overflow: unset;
+		overflow:visible;
+		align-content: center;
+		align-self: center;
 	}
 }

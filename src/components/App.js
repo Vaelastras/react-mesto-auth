@@ -233,6 +233,7 @@ const handleRegisterConfirm = (foo) => {
           <Header
             onSignOut={onSignOut}
             email={email}
+            loggedIn={ loggedIn }
           />
           <Switch>
 

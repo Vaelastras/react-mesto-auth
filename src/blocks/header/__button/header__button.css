@@ -15,15 +15,10 @@
 	opacity: 0.6;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 320px) {
 	.header__button {
-		margin-right: 30px;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	.header__button {
-		margin-left: auto;
-		margin-right: auto;
+		margin-top: 18px;
+		padding-bottom: 40px;
+		align-self: center;
 	}
 }

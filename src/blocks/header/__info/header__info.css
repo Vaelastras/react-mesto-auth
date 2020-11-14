@@ -6,8 +6,11 @@
 	justify-content: space-between;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 320px) {
 	.header__info {
 		justify-content: center;
+		flex-direction: column;
+		border-bottom: #545454 1px solid;
 	}
 }
+
