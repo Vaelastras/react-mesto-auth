@@ -31,7 +31,7 @@ const Register = ({ onRegister }) => {
         placeholder='Email'
         pattern='\S+@\S+\.\S+'
         title='Пожалуйста введите email в верном формате, например putin@kremlin.ru'
-        value={email}
+        value={email || ''}
         required
       />
       <input
@@ -42,7 +42,7 @@ const Register = ({ onRegister }) => {
         placeholder='Пароль'
         pattern='^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$'
         title="Требуется минимум 1 строчная буква, 1 прописная буква и 1 цифра"
-        value={password}
+        value={password || ''}
         required
       />
       <button className='popup__submit login__submit' type='submit'>Зарегистрироваться</button>
