@@ -6,8 +6,6 @@
   font-size: 18px;
   line-height: 22px;
   color: #545454;
-
-  /*какой-то глюк с отображением на широкоформатнике -пространство под строкой состояния белое Оо*/
   margin-bottom: 0px;
 
 
@@ -15,6 +13,7 @@
 
 @media (max-width:320px) {
   .footer__copyrigth {
+    padding-bottom: 0px;
     margin: 48px 19px 36px;
     font-size: 14px;
     line-height: 17px;

@@ -29,8 +29,10 @@ const Register = ({ onRegister }) => {
         type='email'
         name='email'
         placeholder='Email'
-        required
+        pattern='\S+@\S+\.\S+'
+        title='Пожалуйста введите email в верном формате, например putin@kremlin.ru'
         value={email}
+        required
       />
       <input
         onChange={handlePasswordChange}
@@ -38,6 +40,8 @@ const Register = ({ onRegister }) => {
         type='password'
         name='password'
         placeholder='Пароль'
+        pattern='^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$'
+        title="Требуется минимум 1 строчная буква, 1 прописная буква и 1 цифра"
         value={password}
         required
       />
